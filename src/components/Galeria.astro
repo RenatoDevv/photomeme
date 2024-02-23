@@ -1,0 +1,61 @@
+---
+import { Image } from "astro:assets";
+import MEME1 from "../../public/meme2.webp";
+import MEME2 from "../../public/meme3.webp";
+import MEME3 from "../../public/meme4.webp";
+import MEME4 from "../../public/meme5.webp";
+import MEME5 from "../../public/meme6.webp";
+import MEME6 from "../../public/meme7.webp";
+import MEME7 from "../../public/meme8.webp";
+import MEME8 from "../../public/meme9.webp";
+---
+
+<section class="galeria" id="galeria">
+    <h2 class="section-subtitle galeria-subtitle">Galería de Creaciones</h2>
+    <div class="meme-container">
+        <div class="meme-card">
+            <Image src={MEME7} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME5} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME2} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME1} alt="Memes" class="image-meme" />
+        </div>
+        <!-- <div class="meme-card">
+            <Image src={MEME3} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME4} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME6} alt="Memes" class="image-meme" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME8} alt="Memes" class="image-meme" />
+        </div> -->
+    </div>
+</section>
+
+<style>
+    .galeria {
+        margin-top: 2rem;
+    }
+    .galeria .galeria-subtitle {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .meme-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .image-meme {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+</style>
