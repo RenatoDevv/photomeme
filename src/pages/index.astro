@@ -5,63 +5,15 @@ import Galeria from "../components/Galeria.astro";
 import Services from "../components/Services.astro";
 import Resource from "../components/Resource.astro";
 import About from "../components/About.astro";
+import Others from "../components/Others.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Photo MEME">
     <Banner />
     <Galeria />
     <Services />
     <Resource />
     <About />
-    <section>
-        <p>
-            Próximamente habra mas información y cambios en la web no olvides
-            visitarla
-        </p>
-    </section>
+    <Others />
 </Layout>
 
-<style>
-    section {
-        margin-bottom: 20px;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    section h2 {
-        color: #333;
-    }
-
-    .galeria-imagenes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 15px;
-    }
-
-    .galeria-imagenes img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-        margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-        .galeria-imagenes {
-            grid-template-columns: 1fr;
-        }
-
-        nav ul li {
-            display: block;
-            margin-bottom: 10px;
-        }
-    }
-</style>

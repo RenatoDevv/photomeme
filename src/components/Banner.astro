@@ -15,7 +15,8 @@ import CatHero from "../../public/cat.webp";
     <a
         href="https://web.facebook.com/groups/788788778437854/"
         target="_blank"
-        class="link-group" title="Unirse al grupo de Pedidos photoshop y creadores de MEMES"
+        class="link-group"
+        title="Unirse al grupo de Pedidos photoshop y creadores de MEMES"
         >Unirme Ahora <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -25,9 +26,9 @@ import CatHero from "../../public/cat.webp";
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
-            stroke-linejoin="round"
-            ><path d="m9 18 6-6-6-6"></path></svg
-        ></a>
+            stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg
+        ></a
+    >
 </section>
 <style>
     .hero {
@@ -70,5 +71,16 @@ import CatHero from "../../public/cat.webp";
     }
     .hero .link-group:hover {
         background: #1919e6ea;
+    }
+    @media screen and (width <= 760px) {
+        .hero {
+            padding: 0 1rem;
+        }
+        .hero .hero-title {
+            line-height: 65px;
+        }
+        .hero .section-title {
+            font-size: 60px;
+        }
     }
 </style>
