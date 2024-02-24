@@ -1,7 +1,56 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import MEME1 from "../../public/meme2.webp";
+import MEME2 from "../../public/meme3.webp";
+import MEME3 from "../../public/meme4.webp";
+import MEME4 from "../../public/meme5.webp";
+import MEME5 from "../../public/meme6.webp";
+import MEME6 from "../../public/meme7.webp";
+import MEME7 from "../../public/meme8.webp";
+import MEME8 from "../../public/meme9.webp";
 ---
 
 <Layout title="Comunidad photoMEME">
-    <h2>Comunidad PHOTOMEME</h2>
+    <h2 class="section-subtitle">
+        Comunidad Bienvenidos a Pedidos photoshop y creadores de MEMES
+    </h2>
+    <section class="meme-comunity">
+        <div class="meme-card">
+            <Image src={MEME7} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME5} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME2} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME1} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME3} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME4} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME6} alt="Memes" class="image-com" />
+        </div>
+        <div class="meme-card">
+            <Image src={MEME8} alt="Memes" class="image-com" />
+        </div>
+    </section>
 </Layout>
+<style>
+    .meme-comunity {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .meme-comunity .image-com {
+        max-width: 100%;
+        width: 300px;
+        height: auto;
+    }
+</style>

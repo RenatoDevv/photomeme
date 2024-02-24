@@ -1,20 +1,26 @@
 <header>
     <div class="header-section">
         <div class="logo">
-            <h1>Pedidos <br /> <span class="logo-name">photoMEME</span></h1>
+            <a href="/"
+                ><h1>
+                    Pedidos <br />
+                    <span class="logo-name">photoMEME</span>
+                </h1></a
+            >
         </div>
         <nav>
             <ul>
                 <li><a href="/" class="nav-link">Inicio</a></li>
                 <li><a href="/comunity" class="nav-link">Galeria</a></li>
-                <li><a href="/trend" class="nav-link">Enfoque</a></li>
-                <li><a href="" class="nav-link">Tendencias</a></li>
-                <li><a href="/about" class="nav-link">Sobre Nosotros</a></li>
+                <li><a href="#approach" class="nav-link">Enfoque</a></li>
+                <li><a href="#resources" class="nav-link">Recursos</a></li>
+                <li><a href="#about" class="nav-link">Sobre Nosotros</a></li>
                 <li>
                     <a
-                        href="https://web.facebook.com/groups/788788778437854/"
+                        href="/donate"
                         class="nav-link-union"
-                        >Unirse
+                        title="Si valora nuestro trabajo haga presente su donación"
+                        >Donar
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
@@ -25,21 +31,40 @@
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            ><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"
-                            ></path><circle cx="9" cy="7" r="4"></circle><line
-                                x1="19"
-                                x2="19"
-                                y1="8"
-                                y2="14"></line><line
-                                x1="22"
-                                x2="16"
-                                y1="11"
-                                y2="11"></line></svg
+                            ><path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                            ></path><path
+                                d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"
+                            ></path><path d="m18 15-2-2"></path><path
+                                d="m15 18-2-2"></path></svg
                         >
                     </a>
                 </li>
             </ul>
         </nav>
+        <a
+            href="/donate"
+            class="link-donate"
+            title="Si valora nuestro trabajo haga presente su donación"
+            >Donar
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                ><path
+                    d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path><path
+                    d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"
+                ></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"
+                ></path></svg
+            >
+        </a>
     </div>
 </header>
 
@@ -94,6 +119,18 @@
         background: #1919e6be;
         color: #fff;
     }
+    .link-donate {
+        background: #191ae6;
+        padding: 11px 20px;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 500;
+        transition: 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        display: none;
+    }
 
     @media screen and (width <= 760px) {
         .header-section {
@@ -105,6 +142,9 @@
         }
         nav {
             display: none;
+        }
+        .link-donate {
+            display: block;
         }
     }
 </style>

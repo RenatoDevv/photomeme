@@ -11,12 +11,40 @@ import Footer from "../components/Footer.astro";
 <!doctype html>
 <html lang="es">
 	<head>
+		<title>{title}</title>
+		<meta name="title" content="Photo MEME" />
+		<meta
+			name="description"
+			content="La comunidad más grande de creadores de memes y editores de fotos."
+		/>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<link rel="icon" type="image/svg+xml" href="/meme3.webp" />		
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://photomeme.vercel.app/" />
+		<meta property="og:title" content="Photo MEME" />
+		<meta
+			property="og:description"
+			content="La comunidad más grande de creadores de memes y editores de fotos."
+		/>
+		<meta
+			property="og:image"
+			content="/image.webp"
+		/>
+
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://photomeme.vercel.app/" />
+		<meta property="twitter:title" content="Photo MEME" />
+		<meta
+			property="twitter:description"
+			content="La comunidad más grande de creadores de memes y editores de fotos."
+		/>
+		<meta
+			property="twitter:image"
+			content="/image.webp"
+		/>
 	</head>
 	<body>
 		<Header />
@@ -37,6 +65,7 @@ import Footer from "../components/Footer.astro";
 	}
 	html {
 		background: #fff;
+		scroll-behavior: smooth;
 	}
 	body {
 		font-family: "Poppins", sans-serif;
@@ -67,8 +96,8 @@ import Footer from "../components/Footer.astro";
 		margin: auto;
 	}
 	@media screen and (width <= 760px) {
-        main {
-            padding: 0 1.5rem;
-        }
-    }
+		main {
+			padding: 0 1.5rem;
+		}
+	}
 </style>
